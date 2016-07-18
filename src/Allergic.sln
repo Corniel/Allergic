@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allergic.UnitTests", "Allergic.Test\Allergic.UnitTests.csproj", "{31218508-3E2B-47B9-BED6-4E5B3783EF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allergic", "Allergic\Allergic.csproj", "{4C114CB5-710D-464D-A4D7-0A6A9101BCD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED1A185A-0650-4EC2-9AEA-E1B0DF023E86}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31218508-3E2B-47B9-BED6-4E5B3783EF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31218508-3E2B-47B9-BED6-4E5B3783EF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31218508-3E2B-47B9-BED6-4E5B3783EF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31218508-3E2B-47B9-BED6-4E5B3783EF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C114CB5-710D-464D-A4D7-0A6A9101BCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C114CB5-710D-464D-A4D7-0A6A9101BCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C114CB5-710D-464D-A4D7-0A6A9101BCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C114CB5-710D-464D-A4D7-0A6A9101BCD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

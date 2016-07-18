@@ -1,0 +1,4 @@
+﻿Allergic
+========
+
+Simple debugger assistant.
