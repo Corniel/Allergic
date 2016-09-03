@@ -43,6 +43,13 @@ namespace Allergic
 		{
 			Throw(Error.LockTimeout, "Some SQL lock time-out.", null, Guid.NewGuid());
 		}
+
+		/// <summary>Throws a dead lock <see cref="SqlException"/>.</summary>
+		public static void ThrowDeadLock()
+		{
+			Throw(Error.Deadlock, "Some SQL dead lock.", null, Guid.NewGuid());
+		}
+
 		public static void Throw(Error error, string message, Exception inner, Guid conId)
 		{
 			var collection = GetCollection(error, message);
