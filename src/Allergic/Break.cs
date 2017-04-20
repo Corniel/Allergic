@@ -2,33 +2,38 @@
 
 namespace Allergic
 {
-	/// <summary>Debugger.Break helper.</summary>
+	/// <summary><see cref="Debugger"/>.Break helper.</summary>
 	public static class Break
 	{
-		/// <summary>Equivalent of <code>Debugger.Break();</code> but launches
+		/// <summary>If the <see cref="Debugger"/> is not attached yet, it will be launched.</summary>
+		[DebuggerStepThrough]
+		public static bool Attach()
+		{
+			if (!Debugger.IsAttached)
+			{
+				Debugger.Launch();
+				return true;
+			}
+			return false;
+		}
+
+		/// <summary>Equivalent of <see cref="Debugger.Break()"/> but launches
 		/// the debugger if not attached yet.
 		/// </summary>
 		[DebuggerStepThrough]
-		public static void Now() { If(true); }
+		public static void Now() => If(true);
 
 		/// <summary>Equivalent of a conditional breakpoint but launches the
 		/// debugger if not attached yet.</summary>
 		/// <remarks>
-		/// The processing of conditional breakpoints is extremely slow, this is quick.
+		/// The processing of conditional breakpoints is extremely slow, this is quicker.
 		/// </remarks>
 		[DebuggerStepThrough]
 		public static void If(bool condition)
 		{
-			if (condition)
+			if (condition &&!Attach())
 			{
-				if (!Debugger.IsAttached)
-				{
-					Debugger.Launch();
-				}
-				else
-				{
-					Debugger.Break();
-				}
+				Debugger.Break();
 			}
 		}
 	}
