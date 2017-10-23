@@ -51,7 +51,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Allergic\Allergic.csproj">
+    <ProjectReference Include="..\..\src\Allergic\Allergic.csproj">
       <Project>{4c114cb5-710d-464d-a4d7-0a6a9101bcd0}</Project>
       <Name>Allergic</Name>
     </ProjectReference>
