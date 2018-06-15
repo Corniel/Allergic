@@ -18,8 +18,8 @@ namespace Allergic
             {
                 using (var writer = new StreamWriter(File, true))
                 {
-                    var prefix = DateTime.Now.ToString("HH:mm.fff ");
-                    writer.WriteLine(prefix + format, args);
+                    writer.Write(DateTime.Now.ToString("HH:mm:ss.fff "));
+                    writer.WriteLine(format, args);
                 }
             }
             catch { /* it is logging, it should never fail. */ }
