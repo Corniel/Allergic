@@ -51,6 +51,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Allergic.Sql\Allergic.Sql.csproj">
+      <Project>{3a54c10f-84b9-4a62-b218-a6f956b42102}</Project>
+      <Name>Allergic.Sql</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\Allergic\Allergic.csproj">
       <Project>{4c114cb5-710d-464d-a4d7-0a6a9101bcd0}</Project>
       <Name>Allergic</Name>
